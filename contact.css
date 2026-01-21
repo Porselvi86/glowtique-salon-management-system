@@ -1,0 +1,135 @@
+/* General Reset */
+
+  
+
+/* Body Style */
+body {
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 40px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Header Style */
+header {
+  background-color: lightyellow;
+  padding: 20px;
+  text-align: center;
+  color:saddlebrown;
+  font-size:18px;
+  font-weight:bold;
+}
+
+/* Navbar Style */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.book-btn{
+    background-color: darkred;
+    color:navajowhite;
+    padding:10px 15px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight: bold;
+}
+.section-title {
+  text-align: center;
+  padding: 20px;
+}
+.section-title h2 {
+  font-size: 30px;
+  /*margin-bottom: 10px;*/
+  color: saddlebrown;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.subtitle {
+  text-align: center;
+  font-size: 25px;
+  margin-top:0;
+  font-weight: bold;
+  color:black
+  /*margin-bottom: 25px;*/
+}
+/* ✅ Contact Section Centering */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding:20px 20px;
+  margin-top:10px;
+  min-height: auto; /* Adjust if your header is taller */
+  padding: 40px 20px;
+}
+
+/* Contact Form Styling */
+.contact-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #fda085;
+  outline: none;
+  box-shadow: 0 0 5px #fda085;
+}
+
+.contact-container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-container button {
+  background-color: #f6a742;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.contact-container button:hover {
+  background-color: #e08e2f;
+}

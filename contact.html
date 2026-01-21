@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glowtique</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Glowtique</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="stylists.html">Stylists</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>  
+        <li><a class="admin-btn" href="admin_login.php" >Admin</a></li>
+        <li><a class="book-btn" href="booking.html">BOOK NOW➔</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="section-title">
+    <h2>Get In Touch</h2><br>
+    <p class="subtitle">We'd love to hear from you. Contact us for appointments or inquiries</p>
+  </div>
+ 
+  <section class="contact-section">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form action="contact.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>

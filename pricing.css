@@ -1,0 +1,140 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding:40px;
+  background-color: antiquewhite;
+  color: #333;
+}
+header {
+    background-color:lightyellow;
+    padding: 10px;
+    text-align: center;
+    color:saddlebrown;
+    font-size:18px;
+    font-weight:bold;
+    box-shadow: 0 2px 5px rgba(163, 41, 41, 0.1);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    text-align:right;
+    font-size: 18px;
+    font-weight:bold;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.book-btn{
+    background-color: darkred;
+    color:navajowhite;
+    padding:10px 15px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight: bold;
+}
+.pricing-section {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.pricing-section h2 {
+  font-size: 30px;
+  color: saddlebrown;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 25px;
+  color: black;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 35px 22px;
+  border-radius: 40px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 5px 8px 15px rgba(139, 4, 4, 0.842);
+  transition: transform 0.3s ease;
+  /*--gap: 30px;--*/
+  display:grid;
+  /*-- justify-items: center; 
+  grid-template-columns: repeat(3,1fr);--*/
+  justify-content: space-around;
+  grid-template-rows: repeat(2,auto);
+  max-width: 1000px;
+  margin:0 auto;
+  margin-top:30px;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: saddlebrown;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.price span {
+  font-size: 20px;
+  font-weight: normal;
+  color: #666;
+  font-weight:bold ;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.card ul li {
+  margin: 8px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  border: 2px solid #5a2d1e;
+  background-color: transparent;
+  color: saddlebrown;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #5a2d1e;
+  color: #fff;
+}
+
+button.filled {
+  background-color: #5a2d1e;
+  color: #fff;
+  border: none;
+}

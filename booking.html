@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Appointment Booking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="booking.css">
+  <script>
+    // Service prices
+    const servicePrices = {
+      "Haircut & Styling": 1111,
+      "Hair Coloring": 1600,
+      "Special Treatment": 2799,
+      "Bridal Events": 3000,
+      "Natural Hair Care": 1999,
+      "Manicure/Pedicure": 2000
+    };
+
+    // Calculate total amount based on checked services
+    function calculateAmount() {
+      let checkboxes = document.querySelectorAll('input[name="service[]"]:checked');
+      let amount = 0;
+      checkboxes.forEach(cb => {
+        amount += servicePrices[cb.value] || 0;
+      });
+      document.getElementById("amount").value = amount;
+    }
+
+    // Validate form before submit
+    function validateForm() {
+      let checked = document.querySelectorAll('input[name="service[]"]:checked');
+      if (checked.length === 0) {
+        alert("Please select at least one service.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Glowtique</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="stylists.html">Stylists</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a class="admin-btn" href="admin_login.php" >Admin</a></li>
+        <li><a class="book-btn" href="booking.html">BOOK NOW➔</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="booking-section">
+    <form class="booking-form" action="booking.php" method="POST" onsubmit="return validateForm()">
+      <h2>Book Your Appointment</h2>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Your Phone</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label>Choose Services</label><br>
+          <input type="checkbox" id="service1" name="service[]" value="Haircut & Styling" onclick="calculateAmount()">
+          <label for="service1">Haircut & Styling</label><br>
+
+          <input type="checkbox" id="service2" name="service[]" value="Hair Coloring" onclick="calculateAmount()">
+          <label for="service2">Hair Coloring</label><br>
+
+          <input type="checkbox" id="service3" name="service[]" value="Special Treatment" onclick="calculateAmount()">
+          <label for="service3">Special Treatment</label><br>
+
+          <input type="checkbox" id="service4" name="service[]" value="Bridal Events" onclick="calculateAmount()">
+          <label for="service4">Bridal Events</label><br>
+
+          <input type="checkbox" id="service5" name="service[]" value="Natural Hair Care" onclick="calculateAmount()">
+          <label for="service5">Natural Hair Care</label><br>
+
+          <input type="checkbox" id="service6" name="service[]" value="Manicure/Pedicure" onclick="calculateAmount()">
+          <label for="service6">Manicure/Pedicure</label><br>
+        </div>
+
+        <div class="form-group">
+          <label for="amount">Total Amount (₹)</label>
+          <input type="text" id="amount" name="amount" readonly required>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="time">Preferred Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="message">Additional Notes (Optional)</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">REQUEST APPOINTMENT</button>
+    </form>
+  </section>
+</body>
+</html>

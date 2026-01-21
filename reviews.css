@@ -1,0 +1,123 @@
+body {
+    font-family: var(--font-secondary);
+    color: var(--text-dark);
+    line-height: 1.7;
+    background-color: antiquewhite;
+    padding:40px;
+}
+header {
+    background-color:lightyellow;
+    padding: 10px;
+    text-align:center;
+    color:saddlebrown;
+    font-size:18px;
+    font-weight:bold;
+    box-shadow: 0 2px 5px rgba(163, 41, 41, 0.1);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    text-align:right;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.book-btn{
+    background-color: darkred;
+    color:navajowhite;
+    padding:10px 15px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight: bold;
+}
+.section-title {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 31px;
+    color:saddlebrown;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.section-title p {
+    font-size: 26px;
+    color: black;
+    font-weight: bold;
+    margin-top:0;
+}
+
+/* Testimonials Section - Swiper */
+#testimonials {
+    padding: 30px 0;
+}
+
+.testimonial-slider.swiper {
+    /* Ensure Swiper styles apply correctly */
+    padding-bottom: 20px;
+    /* Space for pagination */
+}
+
+.testimonial-slider .swiper-slide {
+    background: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(202, 88, 88, 0.774);
+    text-align: center;
+    height: auto;
+    max-width: 800px;
+    margin:20px auto;
+    /* Ensure slides adapt to content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size:20px;
+    margin-top: 30px;
+}
+
+.testimonial-slider img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px auto;
+
+    /* Center image */
+}
+
+.testimonial-slider .client-name {
+    font-weight: 700;
+    font-size: 18px;
+    color:black;
+    margin-top: 10px;
+}
+
+.testimonial-slider .stars {
+    color: #FFD700;
+    /* Gold color for stars */
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/*.swiper-pagination {
+    bottom: 0px !important;
+    /* Position pagination at the very bottom 
+}
+
+.swiper-pagination-bullet {
+    background-color: #ccc;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--primary-color) !important;
+}*/
